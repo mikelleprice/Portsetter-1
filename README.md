@@ -18,3 +18,25 @@ The program will then read in English. If the values 'fr,' 'FR,' 'pl,' or 'PL' a
 error message and revert to English outputs. If Spanish outputs are once again desired, the value of at least one environmental
 variable should be ince more changed to include the characters 'es' or 'ES'.
 
+To use the basic functionality of the program, please note the following instructions:
+
+Instructions for operating the Change Order 2 protocol:
+
+Compile and launch the systemtester.cpp and port.cpp file in Cloud 9.
+In order to access the systemtester program with the alias 'setport' please do the following:
+
+a. Creates a file named 'setport' without any extension.
+b. Write the code line: ~/workspace/port.cpp.o $1 $2 $3 $4. Do not include a line with the symbols #!/bin/bash, 
+as Cloud 9 apparently uses a default bin condition that conflicts with a declared bash in code.
+c. Save and close the file and then move the 'setport' file to the bin folder with the command: mv setport ~/bin
+d. Make the file executable through the command: chmod 755 ~/bin/setport.
+
+In order to set an environment variable when calling the '-e' token please do the following:
+
+a. Type the command 'export' and then after a space type the variable assignment expression [VARIABLE]=[NUMBER]. 
+b. The variable name should be in all capital letters. Choose PORT as your variable name and a number between
+1 and 65,535 for your port number. This is the default value returned when you type the command line arguments:
+setport -p(--port) -e.
+c. To create additional environmental variables with the -e token, follow this comman line pattern:
+setport -p(--port) -e [VARIABLE (all capitals).
+

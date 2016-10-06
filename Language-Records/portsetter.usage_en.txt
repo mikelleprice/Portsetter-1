@@ -1,0 +1,12 @@
+Portsetter Program Usage Screen:
+        
+Help Screen:  
+These are the available arguments for this program:      
+-p or --port, which take a port number as the succeeding argument, which must be between 1 and 65,535.    
+-h or --help or -?, which take no following arguments and show this screen, 
+taken from the directory file "portsetter.usage_en.txt".
+-! or --about, which take no following arguments and show an 'About' screen identifying the program's designer, 
+taken from the directory file "portsetter.about_en.txt".
+-v or --version, which take no following arguments and show the version number of this program.
+-e with no following arguments, which returns the port number value of a pre-set bash shell environment thevariable.
+-e with the following arguments: [VARIABLE] [NUMBER], which returns the value of a port value.

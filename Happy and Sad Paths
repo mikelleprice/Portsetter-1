@@ -1,0 +1,50 @@
+Happy Paths
+setport                 
+setport -h             
+setport --help        
+setport -?
+usage
+return 0
+
+setport -p 4040         
+setport --port 4040     
+"listening on port 4040"
+return 0
+
+
+setport -!
+setport --about
+about 
+return 0
+
+setport -v
+setport --version
+version
+return 0
+
+setport -p -e
+setport --port -e
+setport -p -e [VARIABLE]
+setport --port -e [VARIABLE]
+return 0
+
+Sad Paths
+setport help             
+setport -help          
+setport --h              
+setport -h --help         
+setport -hs             
+setport -p --port 9     
+setport -p 77 33        
+setport -p -21         
+setport -p 0             
+setport --port          
+setport -p 90642         
+setport -x 45321        
+setport -P 714         
+setport -p -E
+setport --port -E
+setport -p -f
+setport --port -g
+error message
+return non-zero
